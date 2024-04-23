@@ -1,13 +1,13 @@
 import './src/styles/settings/colors.css'
 import './src/styles/generic/generic.css'
 import './src/styles/elements/base.css'
-
-import CardGame from "./src/Componets/Card"
+import BoardGame from './src/Objets/Boardgame'
 
 const $root = document.querySelector("#root")
-const $htmlCardGame = CardGame()
+const $htmlBoardGame = BoardGame(9);
+
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
 
 
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
 
 
