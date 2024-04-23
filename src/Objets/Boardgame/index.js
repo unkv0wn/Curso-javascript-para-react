@@ -1,4 +1,4 @@
-import CardGame from "../../Componets/Card/index.js";
+import CardGame from "../../Componets/Card";
 import './styles.css';
 function BoardGame(amountCards) {
     const $htmlCardGame = CardGame();
