@@ -1,6 +1,8 @@
+import "./styles.css";
+
 function PlayerName(PlayerPosition) {
-    return ` 
-    <p>Player ${PlayerPosition}</p>
+    return /*html*/` 
+    <p class="player-name">${PlayerPosition}</p>
     `;
 }
 
