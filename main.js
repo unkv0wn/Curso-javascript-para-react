@@ -4,6 +4,7 @@ import './src/styles/elements/base.css'
 import BoardGame from './src/Objets/Boardgame'
 import PlayerName from './src/Componets/PlayerName'
 import ScoreBoard from './src/Objets/ScoreBoard'
+import CardFrontBack from './src/Componets/CardFrontBack'
 
 const $root = document.querySelector("#root")
 const $htmlBoardGame = BoardGame(6);
