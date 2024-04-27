@@ -1,0 +1,7 @@
+.vs-player {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-amarelo);
+    line-height: 8px;
+    font-weight: 400;
+}

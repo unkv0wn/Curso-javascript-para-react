@@ -1,7 +1,7 @@
 import CardGame from "../Card";
 import './style.css'
 
-function CardFrontBack() {
+function CardFrontBack(Icon, AltIcon) {
 
     window.handleclick = (event) => {
         const $Origin = event.target
@@ -9,15 +9,14 @@ function CardFrontBack() {
 
         $CardFrontBack.classList.toggle("-active")
     }
-
-
+    
     return /*html */`
         <article class="CardFrontBack" onclick="handleclick(event)">
             <div class="card -front"> 
             ${CardGame()}
             </div>
             <div class="card -back">
-            ${CardGame('logo-javascript', 'javascript')}
+            ${CardGame(Icon, AltIcon)}
             </div>
         </article>
     `;

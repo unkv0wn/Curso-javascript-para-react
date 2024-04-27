@@ -1,0 +1,31 @@
+.player-score {
+    box-sizing: border-box;
+    width: 50px;
+    height: 20px;
+    background-color: var(--color-branco);
+    border: 2px solid var(--color-rosa);
+    padding: 1px;
+    display: flex;
+    gap: 1px;
+
+}
+
+.player-score > .pointer {
+    background-color: var(--color-cinza);
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 33%;
+}
+
+.player-score[data-points="1"] > .pointer:first-child {
+    background-color: var(--color-verde);
+}
+
+.player-score[data-points="2"] > .pointer:nth-child(-n+2) {
+    background-color: var(--color-verde);
+}
+
+
+.player-score[data-points="3"] > .pointer {
+    background-color: var(--color-verde);
+}
